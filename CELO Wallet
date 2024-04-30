@@ -20,3 +20,16 @@ await window.ethereum.request({
   iconUrls: ["future"],
 };>],
 });
+
+await window.ethereum.request({
+  method: "wallet_watchAsset",
+  params: {
+    type: "ERC20",
+    options: {
+      address: "<0xb020d981420744f6b0fedd22bb67cd37ce18a1d5>",
+      symbol: "<Cusd>",
+      decimals: 18,
+    },
+    iconUrls: ["future"],
+  },
+});
